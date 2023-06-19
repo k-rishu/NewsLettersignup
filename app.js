@@ -38,11 +38,11 @@ app.post("/", (req, res)=>{
 
     const jsonData = JSON.stringify(data); 
 
-    const url = "https://us17.api.mailchimp.com/3.0/lists/8823076c0c";
+    const url = "https://us17.api.mailchimp.com/3.0/lists/list-id";
 
     const options = {
         method: "POST", 
-        auth: "datasu:e0e79ab813852fb44d24f08c57541add-us17"
+        auth: "datasu:api-key"
     }
 
     const request = https.request(url, options, function(response){
@@ -67,7 +67,7 @@ app.post("/", (req, res)=>{
 
 
 //API KEY
-//e0e79ab813852fb44d24f08c57541add-us17
+
 
 //id
 //8823076c0c.
